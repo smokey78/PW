@@ -1,0 +1,12 @@
+openapi: '3.0.2'
+info:
+  title: API Product Store
+  version: '1.0'
+servers:
+  - url: /ProjectPW/api/
+paths:
+  /products:
+    get:
+      responses:
+        '200':
+          description: OK
