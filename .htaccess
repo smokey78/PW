@@ -1,0 +1,15 @@
+# https://stackoverflow.com/questions/24472349/htaccess-doesnt-work-on-xampp-windows-7
+# https://htaccess.madewithlove.com/
+
+RewriteEngine On
+
+# forward authorization
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+# skip index.php
+RewriteRule ^(.*)api/index\.php$ - [L]
+
+# redirect all generic API calls to index.php
+RewriteRule ^(.*)api/(.*)$ $1api/index.php?api=$2 [R,L]
+
