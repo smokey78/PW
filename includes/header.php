@@ -16,8 +16,8 @@
     <script type="text/javascript">
         const API_URL = "<?php print ROOT_URL?>/api/index.php?api=";
     </script>
-    <script src="<?php print ROOT_URL?>front-end/js/ajax.js"></script>
-    <script src="<?php print ROOT_URL?>front-end/js/front.js"></script>
+    <script src="<?php print ROOT_URL?>/front-end/js/ajax.js"></script>
+    <script src="<?php print ROOT_URL?>/front-end/js/front.js"></script>
 
     <title>Super Shop</title>
 </head>
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="#">Cos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/<?php print ROOT_URL?>/doc/index.html">Swagger OpenAPI docs</a>
+                        <a class="nav-link" href="<?php print ROOT_URL?>/doc/index.html">Swagger OpenAPI docs</a>
                     </li>
                 </ul>
                 <span class="navbar-tex ml-auto">
