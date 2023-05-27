@@ -10,7 +10,7 @@ define('ROOT_URL', '/ProjectPW');
 
 // database credentials
 define('DB_HOST', 'localhost');
-define('DB_USER', 'xxxx');
-define('DB_PASS', '****');
+define('DB_USER', 'root');
+define('DB_PASS', 'root');
 define('DB_NAME', 'store');
 
