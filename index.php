@@ -11,7 +11,7 @@ require_once "./lib/common.php";
 include "./includes/header.php";
 
 if ($db == null) {
-    renderError("No database connection");
+    render_error("No database connection");
 } else {
     if (false) { // todo: check user
         // user page
@@ -24,16 +24,6 @@ include "./includes/footer.php";
 // --- end of render
 
 
-/**
- * Generate an error message box
- */
-function renderError($message) {
-    ?>
-        <div class="alert alert-danger" role="alert">
-            <?php print $message; ?>
-        </div>
-    <?php
-}
 
 /**
  * Content displayed when visitor user shows on main page

@@ -16,7 +16,7 @@ function renderProducts(data) {
         console.log(p);
         var prod = $('<div>', { class: 'product card' , width:"200px", heigth:"100px", })
             .append(
-                $('<img>', { class: 'card-img-top', src: "./Images/" + p.image }))
+                $('<img>', { class: 'card-img-top', src: ROOT_URL + "/Images/" + p.image }))
                 .append(
                     $('<div>', { class: 'card-body' })
                     .append($('<h3>', { text: p.name }))
@@ -31,3 +31,26 @@ function renderProducts(data) {
     
     $('#products').append(row);
 }
+
+
+/**
+ * Callback handler -> login form submit
+ */
+function loginSubmit(e) {
+    e.preventDefault(); // do not post form as normal
+    
+    // disable submit button until we have a response
+    $("#loginForm").hide();
+    $("#loading").show();
+    
+    // extract values from form
+    let formUserName = e.target[0].value;
+    let formPassword = e.target[1].value;
+    
+    console.log("loginSubmit", formUserName, formPassword);
+    
+    // construct payload to post
+    let payload = {username: formUserName, password: formPassword};
+    
+    apiPost("/login", payload, loginOk, loginError);
+} 

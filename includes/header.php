@@ -14,6 +14,7 @@
     <script src="<?php print ROOT_URL?>/front-end/js/jquery-3.7.0.min.js"></script>
     <script src="<?php print ROOT_URL?>/front-end/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+        const ROOT_URL = "<?php print ROOT_URL?>";
         const API_URL = "<?php print ROOT_URL?>/api/index.php?api=";
     </script>
     <script src="<?php print ROOT_URL?>/front-end/js/ajax.js"></script>
@@ -25,17 +26,17 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="<?php print ROOT_URL?>/">Logo</a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="<?php print ROOT_URL?>/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cos</a>
+                        <a class="nav-link" href="<?php print ROOT_URL?>/login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php print ROOT_URL?>/doc/index.html">Swagger OpenAPI docs</a>
