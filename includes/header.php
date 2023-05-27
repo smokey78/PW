@@ -9,13 +9,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/ProjectPW//front-end/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php print ROOT_URL?>/front-end/css/bootstrap.min.css" rel="stylesheet">
     
-    <script src="/ProjectPW//front-end/js/jquery-3.7.0.min.js"></script>
-    <script src="/ProjectPW/front-end/js/bootstrap.min.js"></script>
-    
-    <script src="/ProjectPW/front-end/js/ajax.js"></script>
-    <script src="/ProjectPW/front-end/js/front.js"></script>
+    <script src="<?php print ROOT_URL?>/front-end/js/jquery-3.7.0.min.js"></script>
+    <script src="<?php print ROOT_URL?>/front-end/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        const API_URL = "<?php print ROOT_URL?>/api/index.php?api=";
+    </script>
+    <script src="<?php print ROOT_URL?>front-end/js/ajax.js"></script>
+    <script src="<?php print ROOT_URL?>front-end/js/front.js"></script>
 
     <title>Super Shop</title>
 </head>
@@ -36,7 +38,7 @@
                         <a class="nav-link" href="#">Cos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ProjectPW/doc/index.html">Swagger OpenAPI docs</a>
+                        <a class="nav-link" href="/<?php print ROOT_URL?>/doc/index.html">Swagger OpenAPI docs</a>
                     </li>
                 </ul>
                 <span class="navbar-tex ml-auto">

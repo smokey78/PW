@@ -1,5 +1,3 @@
-const API_URL = "/ProjectPW/api/index.php?api=";
-
 /**
  * Call an API GET
  */
